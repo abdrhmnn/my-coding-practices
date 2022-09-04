@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke enambelas</title>
+    <style>
+        .left {
+            background-color: brown;
+            padding: 10px;
+            float: left;
+            width: 20%;
+        }
+
+        .main {
+            background-color: chartreuse;
+            padding: 10px;
+            float: left;
+            width: 60%;
+        }
+
+        .right {
+            background-color: cyan;
+            padding: 10px;
+            float: left;
+            width: 20%;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .main,
+            .right {
+                width: 100%;
+                animation: coba 5s ease-in infinite;
+            }
+        }
+
+        @keyframes coba {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banyak cara untuk membuat web yang kita buat menjadi responsive
+    seperti menggunakan <meta>, gunakan CSS max-width:100%; height:auto; -->
+
+    <!-- Responsive text -->
+    <h1 style="font-size: 10vw;">Hello World!</h1>
+    <h2 style="font-size: 5vw;">Hello World 2</h2>
+    <!-- vw itu adalah viewport -->
+    <!-- jadi maksud dari 10vw itu adalah ketika kita mengecilkan browser maka tulisan 
+    tersebut akan mengecil sebanyak 10% width dari ukuran browsernya -->
+    <!-- Responsive text -->
+
+
+    <!-- Media Queries -->
+    <div class="left">
+        <p>Left menu</p>
+    </div>
+    <div class="main">
+        <p>Main menu</p>
+    </div>
+    <div class="right">
+        <p>Right menu</p>
+    </div>
+    <!-- Media Queries -->
+
+</body>
+
+</html>

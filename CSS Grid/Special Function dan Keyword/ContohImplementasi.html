@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Kolom dan Baris</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            border: 4px solid salmon;
+            width: 60%;
+            margin: 50px auto;
+            display: grid;
+
+            /* ini akan membuat kolom 2 akan responsive */
+            /* minimal panjangnya 200px dan maximalnya 300px */
+            /* dia akan mengikuti ukuran dari kolom tersebut dan tidak akan */
+            /* melewati batas yg sudah ditentukan */
+            /* grid-template-columns: 1fr minmax(200px, 300px) 1fr; */
+
+
+            /* dengan auto-fill element yg ada didlm container akan */
+            /* mengisi dirinya sendiri jika panjang dari element tersebut */
+            /* terpenuhi */
+
+            /* kalo auto-fit element yg ada didlm container TIDAK mengisi */
+            /* dirinya sendiri alias batas explicit nya berada diakhir dari */
+            /* element tersebut jika ukuran kontennya lebih kecil dari ukuran */
+            /* containernya */
+            /* grid-template-columns: repeat(auto-fit, 50px); */
+
+
+
+
+            /* min-content akan membuat ukurannya sesuai dengan konten yg */
+            /* ada didalamnya */
+
+            /* kalo max-content akan membuat content nya muat ketika lebih */
+            /* dari satu kata */
+            /* grid-template-columns: 1fr max-content 1fr; */
+
+
+
+
+            /* Melakukan repeat pada 4 kolom dan juga 5 kolom */
+            grid-template-columns: repeat(4, 1fr) repeat(5, 2fr);
+        }
+
+        .item {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">2</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>

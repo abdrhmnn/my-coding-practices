@@ -1,0 +1,13 @@
+{
+  "name": "latihan",
+  "version": "1.0.0",
+  "description": "belajar node js",
+  "main": "07 - Apa itu NPM.js",
+  "scripts": {
+    "start": "node 07 - Apa itu NPM.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdu",
+  "license": "ISC",
+  "dependencies": {}
+}

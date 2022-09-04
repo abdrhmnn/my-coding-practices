@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 50px;
+}
+
+.box{
+    font-size: 30px;
+}
+
+.box h1{
+    /* font-size: 1em; */ /* 1em sama dengan ukuran yg digunakan oleh parent elemen nya */
+    font-size: 1rem;
+}
+
+.box p {
+    /* font-size: 2em; */
+    font-size: 2rem;
+}

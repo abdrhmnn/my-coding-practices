@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 200px;
+            background-color: transparent;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 10%;
+            position: relative;
+            resize: both;
+            /* Untuk membuat element nya bisa diatur sendiri oleh USER */
+            overflow: hidden;
+        }
+
+        .container h1 {
+            color: black;
+            text-transform: uppercase;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+
+        .container textarea {
+            resize: none;
+            width: 80%;
+        }
+
+        .container p {
+            text-align: center;
+            color: black;
+            border: 1px solid red;
+            outline: 4px solid lightgreen;
+            outline-offset: 10px;
+            /* Untuk memberikan jarak pada outline border nya */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Hello World</h1>
+        <textarea name="km" id="km" cols="30" rows="10"></textarea>
+        <p>Hello World</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke sembilan belas</title>
+</head>
+
+<body>
+
+    <!-- Form in HTML -->
+    <!-- Type form terdiri dari text, password, checkbox, radio, submit, reset, dll -->
+    <label for="username">Username :</label>
+    <input type="text" name="username" id="username">
+    <!-- Form in HTML -->
+
+    <!-- Group input -->
+    <fieldset style="width: 300px; height: 100px;">
+        <legend>Data Mahasiswa</legend>
+        <label for="username">Username :</label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password">
+    </fieldset><br><br>
+    <!-- Group input -->
+
+    <!-- Dropdown List, fungsi size untuk menjabarkan isi dari dropdown -->
+    <!-- multiple untuk membuat user bisa menseleksi lebih dari satu pilihan -->
+    <select name="select" id="select" multiple>
+        <option value="abdu">Abdu</option>
+        <option value="rahman" selected>Rahman</option>
+        <option value="keren">Keren</option>
+    </select><br>
+    <!-- Dropdown List, fungsi selected untuk memberikan nama awal pada dropdown -->
+
+    <!-- Text area -->
+    <textarea name="area" id="area" cols="100" rows="10">
+        I want to be a Web Development
+    </textarea><br>
+    <!-- Text area -->
+
+
+    <!-- Datalist input, untuk memberikan beberapa bantuan list kepada user -->
+    <form method="post" action="#">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Google">Google</option>
+            <option value="Mozilla">Mozilla</option>
+            <option value="UC Browser">UC Browser</option>
+        </datalist>
+        <input type="submit">
+    </form><br>
+    <!-- Datalist input, fungsi list dan id itu harus memiliki value yang SAMA -->
+
+</body>
+
+</html>

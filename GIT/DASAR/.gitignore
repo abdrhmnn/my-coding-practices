@@ -1,0 +1,8 @@
+# ignore log folder
+log/
+
+# ignore all file extension .backup
+*.backup
+
+# ignore a file
+abdu.html

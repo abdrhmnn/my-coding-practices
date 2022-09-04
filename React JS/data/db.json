@@ -1,0 +1,19 @@
+{
+    "blogs": [
+        {
+            "title" : "How to run the microsoft word",
+            "author": "Abdu",
+            "id" : 1
+        },
+        {
+            "title" : "Why dont you take the appointment",
+            "author": "Yerin",
+            "id" : 2
+        },
+        {
+            "title" : "Finishing my website when i got a job in Shopee",
+            "author": "Sowon",
+            "id" : 3
+        }
+    ]
+}

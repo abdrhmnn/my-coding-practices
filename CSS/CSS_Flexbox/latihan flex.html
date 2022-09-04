@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .row .colum {
+            /* Value flex dan max-width harus SAMA */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .row .colum img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 400px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .colum {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .colum {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello World</h1>
+    <div class="row">
+        <div class="colum">
+            <img src="bg1.jpg" alt="test">
+            <img src="bg2.jpg" alt="test">
+            <img src="bg3.jpg" alt="test">
+            <img src="bg4.jpg" alt="test">
+            <img src="bg5.jpg" alt="test">
+            <img src="bg6.jpg" alt="test">
+        </div>
+
+        <div class="colum">
+            <img src="bg1.jpg" alt="test">
+            <img src="bg2.jpg" alt="test">
+            <img src="bg3.jpg" alt="test">
+            <img src="bg4.jpg" alt="test">
+            <img src="bg5.jpg" alt="test">
+            <img src="bg6.jpg" alt="test">
+        </div>
+
+        <div class="colum">
+            <img src="bg1.jpg" alt="test">
+            <img src="bg2.jpg" alt="test">
+            <img src="bg3.jpg" alt="test">
+            <img src="bg4.jpg" alt="test">
+            <img src="bg5.jpg" alt="test">
+            <img src="bg6.jpg" alt="test">
+        </div>
+
+        <div class="colum">
+            <img src="bg1.jpg" alt="test">
+            <img src="bg2.jpg" alt="test">
+            <img src="bg3.jpg" alt="test">
+            <img src="bg4.jpg" alt="test">
+            <img src="bg5.jpg" alt="test">
+            <img src="bg6.jpg" alt="test">
+        </div>
+    </div>
+
+</body>
+
+</html>

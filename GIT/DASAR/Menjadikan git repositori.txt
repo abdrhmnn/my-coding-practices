@@ -1,0 +1,3 @@
+caranya, lakukan perintah ini didalam folder yang ingin dijadikan repositori :
+
+git init

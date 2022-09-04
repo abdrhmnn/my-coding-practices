@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .container{
+            width: 100%;
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: flex-end;
+        }
+
+        .container div{
+            padding: 10px;
+            background-color: aquamarine;
+            margin: 5px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="satu">2</div>
+        <div class="satu">3</div>
+        <div class="satu">4</div>
+        <div class="satu">5</div>
+    </div>
+</body>
+</html>

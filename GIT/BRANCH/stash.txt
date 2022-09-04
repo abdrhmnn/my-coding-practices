@@ -1,0 +1,33 @@
+## adalah sebuah tempat dimana kita bisa menyimpan perubahan di Working atau Staging Index
+secara sementara agar branch saat ini menjadi bersih kembali,
+sehingga kita bisa pindah ke branch lain
+
+## ada saat dimana kita terburu-buru utk pindah ke branch lain namun perubahn yg sdh dilakukan
+pd branch sebelumnya msh ada di working atau staging area utk itu jika perubahan trsbt blm
+siap dicommit kita bs simpan ke dalam stash
+
+git stash push -m <pesan>
+
+## melihat semua stash
+
+git stash list
+
+## utk melihat perubahan yg terjadi di stash
+
+git stash show <stashId>
+
+## konsep stash
+
+secara default, jika kita melakukan perubahan dibeberapa file dan pindah ke branch lain maka
+git secara otomatis mengirim perubahan trsbt ke branch yang dituju
+
+tetapi jika terdapat conflict maka git akan beritahu utk melakukan commit atau disimpan
+kedalam stash dan kita tdk dapat pindah ke branch yg dituju
+
+## mengambil perubahan yang disimpan didalam stash 
+
+git stash apply <stashId>
+
+## menghapus stash tertentu dan semua stash
+
+git stash drop <stashId> dan git stash clear

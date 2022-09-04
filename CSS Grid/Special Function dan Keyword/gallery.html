@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddd;
+            text-align: center;
+            margin: 30px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: 20px auto;
+            border: 10px solid white;
+            list-style-type: none;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Gallery</h2>
+    <ul class="gallery">
+        <li><img src="img/img1.jpg" alt=""></li>
+        <li><img src="img/img2.jpg" alt=""></li>
+        <li><img src="img/img3.jpg" alt=""></li>
+        <li><img src="img/img4.jpg" alt=""></li>
+        <li><img src="img/img5.jpg" alt=""></li>
+        <li><img src="img/img6.jpg" alt=""></li>
+        <li><img src="img/img7.jpg" alt=""></li>
+        <li><img src="img/img8.jpg" alt=""></li>
+        <li><img src="img/img9.jpg" alt=""></li>
+        <li><img src="img/img10.jpg" alt=""></li>
+    </ul>
+</body>
+
+</html>

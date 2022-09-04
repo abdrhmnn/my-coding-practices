@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman <%= title %></title>
+</head>
+<body>
+    <h1>Hello Abdu</h1>
+    <%- include('layouts/nav') %>
+    <!-- install plugin ejs utk bisa membaca sintaks ejs nya -->
+    <h3>Nama <%= nama %></h3>
+    <!-- didalam tag % itu kita bisa masukan sintaks javascript -->
+
+    <h3>Daftar Nama</h3>
+    <% if (data.length < 1) { %>
+        <h3>Data kosong!</h3>
+    <% } else { %>
+        <% data.forEach(data => { %>
+            <ul>
+                <li>Nama : <%= data.nama %></li>
+                <li>Email : <%= data.email %></li>
+            </ul>
+        <% }) %>
+    <% } %>
+</body>
+</html>

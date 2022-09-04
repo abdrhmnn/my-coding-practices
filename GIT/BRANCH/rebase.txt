@@ -1,0 +1,21 @@
+## adalah menyatukan dua buah branch menjadi satu baris, berbeda dgn merge kalo merge dia
+menarik perubahan ke branch yg dituju dan melakukan commit baru sedangkan rebase
+dia menggabungkan snapshot yg sdh dilakukan ke branch yg dituju
+
+## melakukan rebase 
+
+git rebase <namaBranch>
+
+## Setelah melakukan rebase, bukan berarti branch yang di rebase sekarang posisinya
+ada di branch yang melakukan rebase, posisinya tetap ada di commit terakhir
+di branch tersebut
+
+## Agar posisinya sama dengan branch yang melakukan rebase, kita bisa
+menggunakan perintah merge
+
+testing rebase - abdu
+testing rebase2 - abdu
+
+## secara konsep rebase otomatis menulis ulang semua commit yang kita lakukan,
+dalam artian commit id yang berada di branch yg melakukan rebase pasti berubah,
+artinya semua referensi ke commit id sebelum-sebelumnya akan rusak dan hilang

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        :root {
+            --main-bg-color: red;
+            /* Nama properties nya harus selalu diawal dengan ( -- ) */
+        }
+
+        .div1 {
+            background-color: var(--main-bg-color);
+            /* dan cara menggilnya gunakan tag var() yang isinya
+            value dari :root nya */
+        }
+
+        .div2 {
+            background-color: var(--main-bg-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse harum accusamus quisquam maiores repellendus?
+            Ut incidunt beatae assumenda iusto doloremque veritatis minima voluptatibus totam fugiat delectus. Ad porro
+            ipsum dolorum!</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero ipsum deleniti dolor voluptates eos
+            voluptas quam quisquam, accusantium, itaque quasi amet error alias. Nostrum alias odio voluptates explicabo
+            ut!</p>
+    </div>
+
+
+</body>
+
+</html>

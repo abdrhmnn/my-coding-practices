@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            width: 180px;
+
+            float: left;
+            /* position: absolute; */
+            /* Karena ada position absolute yg membuat elemen div berpindah ke kanan */
+            height: 100%;
+
+            overflow: auto;
+            /* Untuk membuat scroll bar ketika terlalu banyak memiliki konten */
+        }
+
+        li {
+            border-bottom: 1px solid black;
+        }
+
+        li:last-child {
+            border-bottom: none;
+            /* gunakan pseudo-class last-child untuk tidak membuat border bottom
+            pada li terakhir */
+        }
+
+        ul li a {
+            text-decoration: none;
+            /* margin-bottom: 5px; */
+            display: block;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: black;
+        }
+
+        .active {
+            color: #fff;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Vertical navbar -->
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Vertical navbar -->
+
+    <div style="margin-left: 15%; padding: 1px 16px; height: auto;">
+        <h1>Hello World</h1>
+        <h3>This is example paragraf</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magni vitae, voluptates porro, doloribus,
+            minus soluta rem non saepe esse laboriosam! Aspernatur facere voluptas similique! Facere cupiditate sapiente
+            reiciendis modi.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut consequuntur aliquam asperiores quisquam sint in
+            iste facere officiis nihil doloribus, quia cumque ipsum, mollitia natus nisi architecto? Omnis, ad libero.
+        </p>
+    </div>
+</body>
+
+</html>

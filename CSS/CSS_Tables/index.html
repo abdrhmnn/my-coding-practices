@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke sebelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* Untuk membuat border nya menjadi tipis */
+            width: 40%;
+        }
+
+        th {
+            height: 50px;
+            background-color: chartreuse;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(146, 151, 151);
+            /* even itu GENAP */
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgb(255, 255, 255);
+            /* odd itu GANJIL */
+        }
+
+        table,
+        th,
+        td {
+            border-bottom: 1px solid black;
+            margin: auto;
+            text-align: center;
+            /* vertical-align: bottom; untuk mengubah posisi element menjadi top, bottom and middle */
+            height: 50px;
+        }
+
+        div.responsive {
+            overflow-x: auto;
+            /* Cara untuk membuat table menjadi responsive */
+        }
+
+        caption {
+            caption-side: bottom;
+            /* Untuk menentukan letak keterangan pada table */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        <table cellspacing="10" cellpadding="10">
+            <caption>Hello World</caption>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            <tr>
+                <td>Abdu</td>
+                <td>Abdu</td>
+            </tr>
+            <tr>
+                <td>Abdu</td>
+                <td>Abdu</td>
+            </tr>
+            <tr>
+                <td>Abdu</td>
+                <td>Abdu</td>
+            </tr>
+            <tr>
+                <td>Abdu</td>
+                <td>Abdu</td>
+            </tr>
+
+            <fieldset>
+                <legend>Coba</legend>
+            </fieldset>
+        </table>
+    </div>
+</body>
+
+</html>

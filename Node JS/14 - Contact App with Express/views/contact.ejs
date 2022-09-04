@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman <%= title %></title>
+</head>
+<body>
+    <h1>Halaman Contact</h1>
+    <%- include('layouts/nav') %>
+    <a href="/contact/add">tambah data contact</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% let i = 1 %>
+            <% if(contacts.length == 0) { %>
+                <tr>
+                    <td colspan="4">Data masih kosong!</td>
+                </tr>
+            <% } else { %>
+                <% for( data of contacts ) { %>
+                <tr>
+                    <td><%= i++ %></td>
+                    <td><%= data.nama %></td>
+                    <td><%= data.email %></td>
+                    <td>
+                        <a href="/contact/<%= data.id %>">detail</a>
+                        <a href="/contact/update/<%= data.id %>">ubah</a>
+                        <a href="/contact/delete/<%= data.id %>" onclick="return confirm('yakin?')">hapus</a>
+                    </td>
+                </tr>
+                <% } %>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>

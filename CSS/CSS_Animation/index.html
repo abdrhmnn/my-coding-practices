@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        .satu {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation-name: contoh;
+            animation-duration: 4s;
+
+            animation-delay: 2s;
+            /* Nilai NEGATIF dari animation-delay itu membuat elemennya menjadi cepat */
+
+            /* animation-iteration-count: infinite; */
+
+
+            animation-direction: alternate-reverse;
+            /* normal = dari depan ke belakang
+               reverse = dari belakang ke depan
+               alternate = ke depan dulu baru ke belakang
+               alternate-reverse = ke belakang dulu baru ke depan */
+
+
+            animation-fill-mode: backwards;
+            /* Untuk menentukan animasi awal yang akan dilakukan */
+            /* Kalo forwards itu mulai dari akhir animasi
+               Kalo backwards itu mulai dari awal animasi */
+
+
+            /* animation-timing-function: ; sama seperti value pada transition */
+        }
+
+        @keyframes contoh {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="satu"></div>
+
+</body>
+
+</html>

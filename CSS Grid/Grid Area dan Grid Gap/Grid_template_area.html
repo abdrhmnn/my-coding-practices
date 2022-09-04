@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /* ini kita memberikan tiap" kolom dari grid sebuah nama */
+            grid-template-areas:
+                'header header header'
+                /* kolom 1 sampai 3 */
+
+                'sidebar sidebar sidebar'
+                /* kolom 4 sampai 6 */
+
+                'content content content'
+                /* kolom 7 sampai 9 */
+
+                'footer footer footer'
+                /* kolom 10 sampai 12 */
+            ;
+        }
+
+        .item {
+            width: 100%;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        /* .item:nth-child(even) {
+            background-color: salmon;
+        } */
+
+        .header {
+
+            /* Jadi ini kita memberikan nama kepada tiap" element nya */
+            /* dan juga posisi dari grid nya sudah menyesuaikan dengan */
+            /* grid-template-areas yg sudah dibuat */
+            grid-area: header;
+            background-color: lightblue;
+        }
+
+        .siderbar {
+            grid-area: sidebar;
+            background-color: lightgreen;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: sandybrown;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(109, 106, 106);
+        }
+
+        /* Responsive Breakpoint */
+        @media screen and (min-width: 576px) {
+            .container {
+
+                /* jadi ini ukuran diatas dari handphone */
+                /* Menggabungkan grid dengan responsive */
+                grid-template-areas:
+                    'header header header'
+                    'sidebar content content'
+                    'sidebar content content'
+                    'footer footer footer'
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item sidebar">siderbar</div>
+        <div class="item content">content</div>
+        <div class="item footer">footer</div>
+        <!-- <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+</body>
+
+</html>

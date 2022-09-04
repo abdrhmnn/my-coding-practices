@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            border: 2px solid #333;
+            margin: 10px auto;
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* align-content */
+        }
+
+        .satu{
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+            background-color: rgb(0, 81, 255);
+        }
+
+        .dua{
+            /* flex atau flex-grow */
+            /* order */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- <div class="satu">1</div> -->
+        <div class="satu">2</div>
+        <div class="satu dua">3</div>
+        <div class="satu">4</div>
+        <!-- <div class="satu">5</div>
+        <div class="satu">5</div>
+        <div class="satu">5</div>
+        <div class="satu">5</div>
+        <div class="satu">5</div> -->
+    </div>
+
+
+</body>
+</html>

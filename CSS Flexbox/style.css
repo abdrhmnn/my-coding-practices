@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    height: 2000px;
+}
+
+/* Navbar */
+nav{
+    display: flex; /* hrus kasih display flex jg di elemen ul nya karena li merupakan bagian dari element ul */
+    background-color: sandybrown;
+    justify-content: space-around; /* bisa juga berikan space-between */
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    width: 30%;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+
+/* Hamburger menu */
+.menu-toggle{
+    /* ini utk respon posisi dri input checkbox nya */
+    position: relative;
+    display: none;
+    flex-direction: column;
+    height: 20px; /* tambahkan height utk trigger justify-content nya atau mendistribusikan contentnya */
+    /* background-color: black; */
+    justify-content: space-between;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+/* hamburger menu animasi */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0; /* ini utk mengubah sumbu x dan y (poros dari rotate) */
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%; /* ini utk mengubah y berada di akhir dari element span nya */
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px); /* secara default poros dari rotate itu berada di tengah span */
+
+    /* translate itu utk membuat X menjadi lbh bagus */
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+
+/* responsive for tablet */
+@media screen and (max-width:768px){
+    nav ul{
+        width: 40%;
+    }
+}
+
+
+/* responsive for mobile phone */
+@media screen and (max-width:576px){
+    nav ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: sandybrown;
+        height: 100vh;
+        width: 60%;
+        top: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+}

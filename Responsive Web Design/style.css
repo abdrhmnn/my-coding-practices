@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.container{
+    width: 80%;
+    /* max atau min width utk mengatur lebar maksimal dan minimal dari container */
+    max-width: 520px;
+    /* min-width: 500px; */
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    background-color: peru;
+    padding: 10px;
+    color: white;
+}
+
+.header h3{
+    /* kalo em dia responsive terhadap parent element nya */
+    font-size: 1em;
+}
+
+.section1{
+    height: 300px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.section1 h2{
+    /* gunakan rem untuk responsive terhadap root dari element HTML yaitu html */
+    font-size: 3rem;
+}
+
+.section1 ul{
+    margin-top: 20px;
+    font-size: 2em; /* 2em = 200% dari ukuran base font-size yang ada di body */
+    list-style: none;
+}
+
+.main img{
+    width: 100%;
+}

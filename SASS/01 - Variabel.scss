@@ -1,0 +1,88 @@
+// create a variable and use it
+$text-color: red;
+
+.satu {
+    color: $text-color
+}
+
+// nested css
+nav {
+    text-align: center;
+
+    ul {
+        color: black;
+
+        li{
+            background-color: blueviolet;
+        }
+    }
+}
+
+// create mixins, mixin is a group CSS that can be reused
+@mixin box-shadow($x, $y, $blur, $c){ 
+    -webkit-box-shadow: $x $y $blur $c;
+    -moz-box-shadow: $x $y $blur $c;
+    -ms-box-shadow: $x $y $blur $c;
+    box-shadow: $x $y $blur $c;
+}
+// use the mixin
+div {
+    @include box-shadow(0px, 0px, 4px, #fff);
+}
+
+// create a logical conditions (if, else if, else)
+@mixin border-stroke($val){
+    @if $val == light{
+        border: 1px solid black;
+    }@else if $val == medium{
+        border: 3px solid black;
+    }@else if $val == heavy{
+        border: 6px solid black;
+    }@else{
+        border: none;
+    }
+}
+
+#box {
+    @include border-stroke(medium);
+}
+
+// loops
+// start to end means the loop will start excludes the end number
+// start through end means the loop will start includes the end number
+@for $i from 1 to 6 {
+    .text-#{$i} {
+        font-size: 15px * $i; // 15 30 45 for each text- class
+    }
+}
+
+// while
+$x: 1;
+@while $x < 6{
+    .text-#{$x} {
+        font-size: 15px * $x;
+    }
+        $x: $x + 1;
+}
+
+// each, map each items of list
+@each $key, $color in blue, black, red{ // key = index of list
+    .#{$color}-bg {background-color: $color;}
+}
+
+// partials, scss file do not convert to css file and can be imported
+// to another scss file
+// names of partials start with underscores _
+@import 'namePartial';
+
+// extend keyword, to copy a group css from another css
+.el1 {
+    font-size: 15px;
+    color: red;
+}
+
+.copyEl1{
+    @extend .el1;
+    text-decoration: line-through;
+}
+

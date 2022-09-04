@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        .satu {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        .dua {
+            /* white-space: nowrap; */
+            /* Untuk membuat kata menjadi SATU BARIS */
+        
+            /* overflow: hidden; */
+
+
+            text-overflow: ellipsis;
+            /* Ada simbol titik-titik diujung kalimatnya */
+
+            width: 200px;
+            border: 1px solid black;
+            text-align: justify;
+
+
+            text-justify: inter-word;
+            /* Untuk mengatur posisi dari text-justify menjadi lebih spesifik lagi */
+
+
+            margin: auto;
+        }
+
+        .tiga {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+
+
+            word-wrap: break-word;
+            /* mengatur kata-kata yang keluar secara HORIZONTAL dari parentnya */
+
+
+            word-break: break-word;
+            /* Untuk mengelola jarak disetiap kata  */
+        }
+
+        span {
+            writing-mode: vertical-rl;
+            /* untuk mengatur posisi kata secara horizontal atau vertical */
+        }
+
+        .satu:hover {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="satu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia ullam iure recusandae in
+        saepe voluptatum illum quasi quaerat. Doloribus.</p>
+
+    <p class="dua">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam officia non optio quam, ipsam
+        praesentium consequuntur qui quisquam dignissimos facilis.</p>
+
+    <p class="tiga">Lorem ipsum dolor sit amet <span>consectetur adipisicing elit.</span>Eaque, nisi enim! Molestiae hic
+        harum
+        ducimus! Molestias totam iure voluptatibus saepe! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+        dolores est odio expedita animi numquam quae porro deserunt esse consequuntur quisquam ea minima possimus soluta
+        adipisci error, doloribus voluptas delectus?</p>
+</body>
+
+</html>

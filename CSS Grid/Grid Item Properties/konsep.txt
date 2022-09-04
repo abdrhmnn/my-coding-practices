@@ -1,0 +1,38 @@
+1. grid-column-start & end, grid-row-start & end
+Menentukan tempat dari grid item dengan mengacu pada nomor atau nama grid
+line yang spesifik
+
+grid-column-start => <nomor> | <nama> | span <nomor> | span <nama> | auto;
+
+span <nomor> = membuat item nya akan memanjang / melebar sampai sejumlah nomor
+
+
+
+2. grid-column dan grid-row
+Merupakan shorthand dari start dan end pada grid-column & grid-row
+
+grid-column: <start-line> / <end-line> | <start-line> / span <value>
+grid-row: <start-line> / <end-line> | <start-line> / span <value>
+
+
+3. grid-area
+Menentukan nama area pada item sesuai dengan template yang sudah dibuat
+sebelumnya melalui properti grid-template-areas.
+Bisa juga digunakan sebagai shorthand untuk grid-column-start, grid-column-end
+grid-row-start dan grid-row-end.
+
+shorthand nya :
+grid-area: <row-start> / <column-start> / <row-end> / <column-end>
+
+
+
+Properti selajutnya untuk mengatur posisi pada sebuah item :
+
+1. justify-self => start, end, center, strech
+Mengatur posisi item pada sebuah cell terhadap sumbu horizontal
+
+2. align-self => start, end, center, strech
+Mengatur posisi item pada sebuah cell terhadap sumbu vertical
+
+3. place-self
+Shorthand untuk menulis align-self dan justify-self dalam satu deklarasi

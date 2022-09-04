@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 Flexbox</title>
+    <style>
+        body{
+            background-color: rgb(54, 54, 54);
+        }
+        .container{
+            width: 600px;
+            height: 400px;
+            border: 5px solid red;
+            margin: 30px auto;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            /* row (default) = kiri ke kanan */
+            /* row-reverse = kanan ke kiri */
+            /* column = atas ke bawah */
+            /* column-reverse = bawah ke atas */
+
+
+            /* flex-wrap utk mengatur ketika elemen yg dibuat sdh tdk muat lg di container*/
+            flex-wrap: wrap;
+            /* nowrap (default) */
+            /* wrap = menurunkan item ke bawah */
+            /* wrap-reverse = menurunkan item dgn dimulai dri element terakhir */
+
+
+            /* mengatur jarak antar items secara horizontal */
+            /* justify-content: center; */
+            /* flex-star(default) */
+            /* flex-end = berada di terakhir container */
+            /* center = berada di tengah */
+            /* space-around, space-between, space-evenly */
+
+
+            /* mengatur jarak antar items secara vertical */
+            /* align-items: center; */
+
+
+            /* mengatur jarak ketika element dri flexbox berjumlah lebih dari satu baris */
+            /* align-content: flex-end; */
+        }
+
+        /* Ini dilakukan jika kita tidak menggunakan display flex */
+        /* .container::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+
+        .container div{
+            flex: 1;
+            background-color: aquamarine;
+            margin: 5px;
+            /* line-height: 100px; */
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        /* element flexbox yang bisa diberikan didalam items */
+        /* order utk mengatur posisi dri setiap item dgn memberikan urutan di item tersebut */
+
+        /* flex-grow / flex utk mengatur ukuran dri setiap item */
+        .satu{
+            order: 3;
+        }
+        .container div.dua{
+            flex: 3;
+            order: 1;
+        }
+        .tiga{
+            order: -1;
+        }
+        .empat{
+            /* align-self: stretch; utk mengatur posisi satu item secara vertical */
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="lima">5</div>
+        <div class="enam">6</div>
+    </div>
+</body>
+</html>

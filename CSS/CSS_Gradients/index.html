@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        .ln {
+            background-image: linear-gradient(to right, skyblue, yellow, lightgreen);
+            /* value dari linear-gradien yaitu, posisi, color 1, color 2, etc.. */
+            /* Bisa juga tambahkan opacity caranya gunakan color rgba didalam linear gradient */
+            /* Posisi dari linear gradient :
+                1. to top = dari bawah ke atas      5. to left top = dari bawah ke kanan
+                2. to bottom = dari atas ke bawah   6. to right top = dari bawah ke kiri
+                3. to left = dari kanan ke kiri     7. to left bottom = dari atas ke kanan
+                4. to right = dari kiri ke kanan    8. to right bottom = dari atas ke kiri */
+
+            /* Untuk mengulang seluruh warna gunakan property repeating-linear-gradient */
+
+
+            width: 500px;
+            height: 300px;
+        }
+
+        .rl {
+            background-image: repeating-radial-gradient(skyblue 10%, yellow 40%, lightgreen 50%);
+            /* Ini adalah teknik color stop pada radial-gradient */
+            /* bentuk dari radial gradient itu dibagi menjadi dua yaitu circle dan shape */
+            /* posisi dari radial-gradient yaitu
+                1. closest-side
+                2. farthest-side
+                3. closest-corner
+                4. farthest-corner */
+
+
+            width: 300px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Linear gradient -->
+    <div class="ln"></div>
+    <!-- Linear gradient -->
+
+
+    <!-- Radial gradient -->
+    <div class="rl"></div>
+    <!-- Radial gradient -->
+</body>
+
+</html>

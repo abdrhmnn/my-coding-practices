@@ -1,0 +1,35 @@
+grid-template-columns dan grid-template-rows
+
+digunakan untuk mendefinisikan kolom / baris dengan cara menuliskan nilai 
+dipisahkan oleh spasi. Nilai merepresentasikan ukuran grid track dan spasi
+merepresentasikan grid line
+
+value pada grid track : bisa berikan px, %, auto, atau fr (fraction)
+auto adalah nilai SISANYA setelah value sebelumnya itu ditulis
+
+
+Explicit dan Implicit grid
+
+Explicit adalah ketika kita secara jelas menentukan ukuran dari grid 
+(kolom dan baris) nya
+
+Implicit adalah ketika grid nya menentukan secara otomatis sisanya dari kolom
+dan baris yang tidak kita tentukan secara Explicit
+
+
+Auto Rows dan Auto columns
+Adalah kedua item yg menangani ketika terdapat sebuah item yang implicit
+
+
+Auto Flow => row | column | row dense | column dense
+berfungsi untuk mengatur penempatan item / cell pada grid track (ukuran),
+termasuk yang ditulis secara implicit. Jika kita menggunakan grid-template-rows
+secara bersamaan dengan auto flow maka akan menghasil kebalikan dari 
+implicit column.
+
+Implicit columns = Kolom dulu baru turun
+Implicit rows = Baris dulu baru naik
+
+
+Fraction (Pecahan)
+merupakan salah satu value yang bisa diberikan pada grid track

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latiham</title>
+    <style>
+        /* Normal Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            /* bottom: 80px; */
+        }
+
+        /* Kuncinya adalah diposition .dropdown dan .dropdown-content karena posisi mereka lah yang
+        bisa membuat menu dropdown dan jangan lupa hilangkan display pada .dropdown-content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            /* z-index: 1; */
+            cursor: pointer;
+        }
+
+        .dropdown:active .dropdown-content {
+            display: block;
+        }
+
+
+
+
+
+        /* Dropdown Menu Link */
+        .dw-link {
+            position: relative;
+            display: inline-block;
+            bottom: 80px;
+        }
+
+        .dw-link span {
+            margin-left: 80px;
+        }
+
+        .dw-content {
+            display: none;
+            position: absolute;
+            background-color: gray;
+            width: 80px;
+            margin-left: 80px;
+        }
+
+        .dw-link:hover .dw-content {
+            display: block;
+        }
+
+        .dw-content a {
+            text-decoration: none;
+            display: block;
+            color: black;
+            padding: 10px 15px;
+        }
+
+        .dw-link a:hover {
+            background-color: #f1f1f1;
+        }
+
+
+
+        /* Dropdown Image */
+        .im-link {
+            position: relative;
+            display: inline-block;
+            margin-left: 80px;
+        }
+
+        .im-content {
+            display: none;
+            position: absolute;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .desc {
+            padding: 7px 12px;
+            text-align: center;
+        }
+
+        .im-link:active .im-content {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+        <span>Click Me !</span>
+        <div class="dropdown-content">
+            <p>Hello World !</p>
+            <p>Hello World !</p>
+            <p>Hello World !</p>
+            <p>Hello World !</p>
+        </div>
+    </div>
+    <!-- Dropdown Menu -->
+
+
+    <!-- Dropdown Menu with Link -->
+    <div class="dw-link">
+        <span>Hover Me !</span>
+        <div class="dw-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <!-- Dropdown Menu with Link -->
+
+    <!-- Dropdown Image -->
+    <div class="im-link">
+        <img src="bg1.jpg" alt="gfriend" style="width: 110px; height: 100px;">
+        <div class="im-content">
+            <img src="bg1.jpg" alt="gfriend" style="width: 200px; height: 150px;">
+            <div class="desc">Hello World</div>
+        </div>
+    </div>
+    <!-- Dropdown Image -->
+</body>
+
+</html>

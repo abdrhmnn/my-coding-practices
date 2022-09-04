@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* kalo kita gabikin base font-size di root, maka ukurannya adalah 16px */
+body{
+    line-height: 1.8em;
+}
+
+/* Latihan viewport */
+header{
+    background-color: salmon;
+    /* height: 500px; */ /* akan absolute tinggi nya, jika kita buka di device manapun */
+    /* height: 100%; */ /* tinggi akan mengikuti elemen yg ada didalamnya karena kita tidak set */
+    /* height nya di parent elemennya */
+    height: 100vh;
+
+    /* membuat tulisan 'hello world by Abdurrahman' itu ke tengah */
+    display: flex;
+}
+/* Latihan viewport */
+
+h1{
+    /* font-size: 4rem; */
+
+    /* untuk membuat tulisannya responsive terhadap ukuran dari viewport parentnya */
+    /* maka bisa gunakan vmax */
+    font-size: 10vmax;
+
+    line-height: 1.2em; /* em dipake utk length (margin, padding, line-height, width, height) */
+    /* pokoknya selain font-size, klo gt maka dia akan melihat dari elemen yg bersangkutan */
+    /* jika ada maka akan dikalikan tp jika gk ada maka dia akan liat ke root */
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    text-align: center;
+
+    /* jika flex-items diberikan margin auto maka dia akan berada ditengah secara horizontal dan vertical */
+    margin: auto;
+}
+
+section{
+    margin: 30px auto;
+    width: 80%;
+}
+
+section .detail{
+    font-size: 1.4rem;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.5em 0;
+    margin-bottom: 2em;
+    color: #333;
+}

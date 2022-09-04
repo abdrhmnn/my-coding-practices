@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke enam belas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .satu {
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        img {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .dua {
+            background-color: lawngreen;
+            width: 200px;
+            height: 200px;
+        }
+
+        .img-container {
+            float: left;
+            width: 33%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            clear: both;
+            display: table;
+            content: "";
+        }
+
+        .flex-container {
+            display: flex;
+            /* Untuk mengatur kalimat yang berada didalam box */
+
+            flex-wrap: nowrap;
+            /* Untuk mengatur satu baris kalimat didalam box */
+
+            background-color: lemonchiffon;
+        }
+
+        .flex-container .box {
+            background-color: lightseagreen;
+            line-height: 20px;
+            text-align: justify;
+            width: 50%;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p><img src="bg1.jpg" alt="sinb" style="width: 170px; height: 170px;">Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit.
+        Quas iusto temporibus aspernatur, debitis eligendi deserunt. Odit, animi vero. Repudiandae reiciendis fugit
+        earum aspernatur molestiae mollitia quibusdam inventore maiores dolorum consequuntur.</p>
+    <div class="clear"></div>
+    <div class="dua"></div>
+
+
+    <!-- Grid Image -->
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="bg1.jpg" alt="sinb" style="width: 100%; height: auto;">
+        </div>
+        <div class="img-container">
+            <img src="bg2.jpg" alt="sinb" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="bg3.jpg" alt="sinb" style="width: 100%;">
+        </div>
+    </div>
+    <!-- Grid Image -->
+
+
+    <!-- Display Flex -->
+    <div class="flex-container">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt! lorem
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores delectus enim vitae nisi,
+            asperiores nam obcaecati numquam maiores temporibus officia?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem vel dolore repudiandae sequi
+            corporis accusantium dolorem minima qui nesciunt!</div>
+    </div>
+    <!-- Display Flex -->
+
+</body>
+
+</html>

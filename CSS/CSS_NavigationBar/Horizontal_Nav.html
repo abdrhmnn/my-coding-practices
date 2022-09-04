@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: grey;
+            width: 100%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+        }
+
+        li {
+            display: inline-block;
+            padding: 14px 16px;
+            /* border-right: 1px solid white; */
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: #666;
+
+        }
+
+        ul li:hover {
+            background-color: greenyellow;
+            color: black;
+        }
+
+        .active {
+            background-color: grey;
+            color: red;
+        }
+
+        /* li:last-child {
+            border-right: none;
+        } */
+
+
+        /* NOTE* Terdapat 2 cara untuk membuat nav secara HORIZONTAL : */
+        /* Yang pertama yaitu gunakan display: inline pada element <li> nya */
+        /* Yang kedua yaitu gunakan float: left pada tag <li> dan display: block pada tag <a> */
+    </style>
+</head>
+
+<body>
+
+    <!-- Horizontal Nav -->
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Horizontal Nav -->
+
+    <div style="margin: 30px -8px 0 0; padding: 10px; height: 2000px; background-color: springgreen;">
+        <h1>Hello World</h1>
+        <h3>This is example paragraf</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat minima quo tempore veniam impedit iusto
+            eius possimus, consequuntur cumque a exercitationem ipsum ipsam deleniti quas quaerat iste in soluta sed?
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat minima quo tempore veniam impedit iusto
+            eius possimus, consequuntur cumque a exercitationem ipsum ipsam deleniti quas quaerat iste in soluta sed?
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat minima quo tempore veniam impedit iusto
+            eius possimus, consequuntur cumque a exercitationem ipsum ipsam deleniti quas quaerat iste in soluta sed?
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat minima quo tempore veniam impedit iusto
+            eius possimus, consequuntur cumque a exercitationem ipsum ipsam deleniti quas quaerat iste in soluta sed?
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat minima quo tempore veniam impedit iusto
+            eius possimus, consequuntur cumque a exercitationem ipsum ipsam deleniti quas quaerat iste in soluta sed?
+        </p>
+    </div>
+
+</body>
+
+</html>

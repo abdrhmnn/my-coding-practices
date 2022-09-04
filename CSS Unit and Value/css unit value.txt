@@ -1,0 +1,15 @@
+Ukuran yg absolute = px, pt, pc, cm, mm, in
+utk membuat tampilan aplikasi, biasanya menggunakan px
+sisanya digunakan utk mendesain printing jika diaplikasi kita ada fitur print
+
+
+Kalo % akan mengikuti ukuran dari parentnya
+Kalo em relatif ukuran font yang sedang digunakan
+Kalo rem relatif ukuran font root atau tag <html>
+
+viewport adalah lebar atau ukuran dari layar yg kita lihat saat itu
+dan satuannya adalah %, jadi 1vh itu artinya 1% vh
+Kalo vh relatif terhadap tinggi dari viewport
+Kalo vw relatif terhadap lebar dari viewport
+Kalo vmin relatif terhadap dimensi terkecil (minimum) sebuah viewport
+Kalo vmax relative terhadap dimensi terbesar (maximum) sebauh viewport

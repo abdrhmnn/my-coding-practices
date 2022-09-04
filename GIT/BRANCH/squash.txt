@@ -1,0 +1,8 @@
+## adlh cara dimana kita dpt membuat 10 commit history dari hasil merge atau rebase menjadi
+1 commit, dimana semua 10 perubahan tersebut akan digabungkan menjadi 1 commit saja
+
+git merge --squash <namaBranch>
+
+test squash3
+test squash2
+test squash

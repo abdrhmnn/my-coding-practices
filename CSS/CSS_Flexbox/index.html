@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 400px;
+            /* Untuk membuat element menjadi flexbox, syarat utama harus menambahkan posisi flex
+            pada CONTAINER nya */
+            display: flex;
+            background-color: aquamarine;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap-reverse; */
+            /* SHORTHAND dari flex-direction  dan flex-wrap */
+
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+        /* Property dari flex (container) yaitu :
+            1. flex-direction, untuk menentukan posisi (colum) dari element nya, value nya ada :
+                - colum = dari atas ke bawah
+                - colum-reverse = dari bawah ke atas
+                - row = dari kiri ke kanan
+                - row-reverse = dari kanan ke kiri
+            
+            
+            2. flex-wrap, untuk membuat multi line element, valude nya ada :
+                - wrap = membuat element nya menjadi dua colum
+                - nowrap = tidak berubah sama sekali (DEFAULT)
+                - wrap-reverse = membuat element nya menjadi dua colum dan dimulai dari bawah ke atas
+
+
+            3. flex-flow, SHORTHAND dari flex-direction dan flex-wrap
+
+
+            4. justify-content, untuk mengatur posisi (HORIZONTAL) dari tiap" element nya, valuenya ada :
+                - center
+                - flex-start (default)
+                - flex-end
+                - space-between
+                - space-around
+                - space-evenly
+
+ 
+            5. align-items, untuk mengatur posisi (VERTICAL) dari tiap" element nya, valuenya ada :
+                - center = ke tengah
+                - flex-start = ke bagian atas container
+                - flex-end = ke bagian bawah container
+                - stretch = tidak terjadi apa" (DEFAULT)
+                - baseline = membuat elemen nya kembali seperti SEMULA
+
+
+            6. align-content, untuk mengatur jarak sama seperti align-items, value nya ada : 
+                - center = ke tengah
+                - flex-start = ke bagian atas container
+                - flex-end = ke bagian bawah container
+                - stretch = tidak terjadi apa" (DEFAULT)
+                - baseline = membuat elemen nya kembali seperti SEMULA */
+
+        .container div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 75px;
+        }
+
+        /* order, Property digunakan mengatur (KELIPATAN) isinya sesuai keinginan sendiri dari tiap" element */
+        /* grow, digunakan untuk membuat elementnya menjadi lebih lebih lebar daripada element" yg lain */
+        /* basis, digunakan untuk memberikan WIDTH pada suatu element secara spesifik */
+        /* align-self, digunakan untuk menseleksi suatu element dan merubah posisinya sesuai dgn keinginan kita
+        valuenya SAMA seperti align-items */
+
+
+
+        /* FLEX adalah shorthand dari flex-grow, flex-shrink, flex-basis */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="flex-grow: 10%;">1</div>
+        <div>2</div>
+        <div style="flex-shrink: 4;">3</div>
+        <div style="align-self: flex-start;">4</div>
+        <div style="order: 7;">5</div>
+        <div>6</div>
+        <div style="order: 5;">7</div>
+        <div>8</div>
+        <div style="flex-basis: 100px;">9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        </divc>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke duapuluh</title>
+</head>
+
+<body>
+
+    <!-- Macam" input types -->
+    <!-- 1. button              11. number      21. url
+         2. checkbox            12. password    22. week
+         3. color               13. radio
+         4. date                14. range
+         5. datetime-local      15. reset
+         6. email               16. search
+         7. file                17. submit
+         8. hidden              18. tel
+         9. image               19. text
+         10. month              20. time    -->
+    <!-- Macam" input types -->
+
+
+    <!-- Color type -->
+    <form method="post" action="#">
+        <label for="color">Silahkan pilih warna</label>
+        <input type="color" name="color" id="color">
+        <button type="submit" name="submit">Check It</button>
+    </form>
+    <!-- Color type -->
+
+
+    <!-- Date type -->
+    <form method="post" action="#">
+        <label for="date">Tanggal :</label>
+        <input type="date" name="date" id="date">
+    </form>
+    <!-- Date type -->
+
+
+    <!-- Datetime-local type, untuk membuat waktu dan hari secara lebih spesifik -->
+    <form method="get" action="#">
+        <label for="time">Waktu :</label>
+        <input type="datetime-local " name="time" id="time">
+    </form>
+    <!-- Datetime-local type -->
+
+
+    <!-- File type, menghasil file yang diambil dari docx kita -->
+    <form method="post" action="#">
+        <label for="file">Masukan File :</label>
+        <input type="file" name="file" id="file">
+    </form>
+    <!-- File type -->
+
+
+    <!-- Month type, menghasil input bulan dan tahun user -->
+    <form method="get" action="#">
+        <label for="month">Bulan dan Tahun :</label>
+        <input type="month" name="month" id="month">
+    </form>
+    <!-- Month type -->
+
+
+    <!-- Number type, untuk membuat input dengan value ANGKA -->
+    <form method="post" action="#">
+        <label for="number">Number :</label>
+        <input type="number" name="number" id="number" min="1" max="5">
+    </form>
+    <!-- Number type -->
+
+
+    <!-- Range type, menghasil nilai BETWEEN -->
+    <form method="get" action="#">
+        <label for="range">Range Angka 1 - 10</label>
+        <input type="range" name="range" id="range" min="0" max="10">
+    </form>
+    <!-- Range type -->
+
+
+    <!-- Search type, seperti search engine -->
+    <form method="post" action="#">
+        <label for="search">Search :</label>
+        <input type="search" name="search" id="search">
+    </form>
+    <!-- Search type -->
+
+
+    <!-- Tel type, menghasil input nomor telephone -->
+    <form method="post" action="#">
+        <label for="tel">Telephone number :</label>
+        <input type="tel" name="tel" id="tel" pattern="">
+        <span>Format : 123-4-532</span>
+    </form>
+    <!-- Tel type -->
+
+
+    <!-- Time type, menghasil input waktu timezone -->
+    <form method="get" action="#">
+        <label for="time">Time :</label>
+        <input type="time" name="time" id="time">
+    </form>
+    <!-- Time type -->
+
+
+    <!-- URL type, menghasil hanya input URL saja -->
+    <form method="post" action="#">
+        <label for="url">URL :</label>
+        <input type="url" name="url" id="url">
+    </form>
+    <!-- URL type -->
+
+
+    <!-- Week type, menghasil input week dan year -->
+    <form method="get" action="#">
+        <label for="week">Week :</label>
+        <input type="week" name="week" id="week">
+    </form>
+    <!-- Week type -->
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1658215831997" clover="3.2.0">
+  <project timestamp="1658215831997" name="All files">
+    <metrics statements="15" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0" elements="18" coveredelements="3" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
+    <file name="coba.js" path="D:\abdu\VSCODE_UNIT_TESTING_NODEJS\coba.js">
+      <metrics statements="15" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="6" count="0" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

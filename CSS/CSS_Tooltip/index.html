@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid grey;
+        }
+
+        .tooltiptext {
+            visibility: hidden;
+            /* Visibility ini harus ditambahkan kedalam parent TEXT nya */
+
+
+            width: 120px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px 0;
+
+
+            /* Untuk mengatur posisi dari TOOLTIP nya */
+            position: absolute;
+            z-index: 1;
+            top: -3px;
+            left: 105%;
+            /* Value nya harus 105% dan juga bisa disesuaikan */
+
+
+            /* NOTE* jika padding ditambah maka value dari top nya juga harus ditambah/dikurang  */
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .tooltip2 {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+
+        }
+
+        .tooltiptext2 {
+            visibility: hidden;
+            width: 120px;
+            padding: 5px 0;
+            color: white;
+            background-color: gray;
+            text-align: center;
+            border-radius: 6px;
+
+            /* Posisi dari tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            /* Untuk mengubah posisi tooltip di atas atau dibawah cukup ganti top menjadi bottom */
+            left: 50%;
+            margin-left: -40px;
+            margin-top: 10px;
+            /* tambahkan margin top untuk mengatur posisi dari tooltip(BAWAH) */
+
+
+            /* Ini untuk menambahkan sedikit efek transisi pada tooltip nya */
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .tooltip2:hover .tooltiptext2 {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tooltip">
+        Hover me
+        <span class="tooltiptext">
+            Tooltip Text
+        </span>
+    </div>
+    <br><br>
+
+    <div class="tooltip2">
+        Hover me 2
+        <span class="tooltiptext2">
+            Tooltiptext2
+        </span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+## Menggunakan perintah :
+
+git config -l / git config -l --show-origin
+
+
+## kalo mau ganti data-data nya :
+
+git config <optionUntukKonfigurasi> <data>
+
+
+## jika ingin melihat parameter untuk tiap" perintah git :
+
+git help <namaPerintah> // git help add
+
+
+## untuk keluar dari proses git :
+
+tekan Q
+
+
+## membuat alias :
+
+git config --global alias.<namaAlias> commit

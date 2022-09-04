@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman <%= title %></title>
+</head>
+<body>
+    <h2>Tambah data contact baru</h2>
+    <form action="/contact" method="POST">
+        <input type="hidden" name="id" value="<%= contact.length + 1 %>">
+        <label for="nama">Masukan nama : </label>
+        <input type="text" name="nama" id="nama" required><br><br>
+        <label for="email">Masukan email : </label>
+        <input type="email" name="email" id="email" required><br><br>
+        <!-- <input type="file" name="gambar" id="gambar"><br><br> -->
+        <button type="submit">submit</button>
+    </form>
+    <br><br><br>
+    <a href="/contact">kembali</a>
+</body>
+</html>

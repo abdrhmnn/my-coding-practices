@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan kesepuluh</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            /* border-spacing: ;  jika sudah ada collapse maka spacing tidak berfungsi */
+            text-align: center;
+            padding: 15px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption style="margin-bottom: 10px;">Mahasiswa</caption>
+        <tr>
+            <th>Nama</th>
+            <th>Jurusan</th>
+            <th>NIM</th>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Rahman</td>
+            <td>TI</td>
+            <td>13010313</td>
+            <td>Hello</td>
+        </tr>
+        <tr>
+            <td rowspan="3" colspan="2">
+                <h1>?</h1>
+            </td>
+            <td>TI</td>
+            <td>13010313</td>
+        </tr>
+        <tr>
+            <td>Amelia</td>
+            <td>TI</td>
+            <td>13010313</td>
+        </tr>
+        <tr>
+            <td>Amelia</td>
+            <td>TI</td>
+            <td>13010313</td>
+        </tr>
+        <tr>
+            <td>Amelia</td>
+            <td>TI</td>
+            <td>13010313</td>
+        </tr>
+    </table>
+
+    <!-- colspan itu kekanan
+        rowspan itu kebawah, elemen caption itu untuk memberikan caption didalam table -->
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+## menambah remote pada git server dgn ssh
+
+git remote add <namaRemote> <ssh-url>
+
+## melihat list remote dan informasi url utk remote tertentu
+
+git remote dan git remote get-url <namaRemote>
+
+## menghapus remote
+
+git remote rm <namaRemote>
+
+## mengirim perubahan ke git server, ini akan mengirim perubahan ke server dgn nama branch yg
+sama, git server yg otomatis membuat nama branch yg sama dgn nama dari local branch
+
+git push <namaRemote> <localBranch>
+
+## jika ingin mengirim ke nama branch yg berbeda
+
+git push <namaRemote> <localBranch:namaRemoteBranch>
+
+## push ke semua local branch ke repositori
+
+git push <namaRemote> --all
+
+## menghapus branch yg berada di repositori
+
+git push --delete <namaRemote> <namaRemoteBranch>

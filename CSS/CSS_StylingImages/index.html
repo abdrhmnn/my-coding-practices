@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        body {
+            /* background-color: gray; */
+            margin: 0;
+            padding: 0;
+        }
+
+        .img {
+            box-sizing: border-box;
+            background-color: white;
+            position: relative;
+        }
+
+        .img img {
+            max-width: 80%;
+            /* max-widt:100% dan height auto akan memmbuat gambarnya menjadi RESPONSIVE */
+            height: auto;
+
+
+            /* Ini untuk membuat gambarnya pindah te tengah halaman, jgn lupa tambahkan 
+            display block nya */
+            margin: auto;
+            display: block;
+        }
+
+        .img img:hover {
+            transition: 1s;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        .img p {
+            font-size: 30px;
+            font-weight: 600;
+            color: white;
+
+
+            /* Ini untuk membuat tulisannya berada ditengah dari gambar */
+            /* Dan jangan tambahkan posisi relative pada pembungkus dari gambar dan text nya */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="img">
+        <img src="bg1.jpg" alt="gfriend">
+        <p>Hello World</p>
+    </div>
+
+</body>
+
+</html>

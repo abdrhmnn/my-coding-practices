@@ -1,0 +1,27 @@
+1. justify-items => start, end, center, stretch (default)
+Sebuah property untuk mensejajarkan grid-items pada sumbu horizontal
+
+2. align-items => start, end, center, stretch (default)
+Sebuah property untuk mensejajarkan grid-items pada sumbu vertical
+
+3. place-items
+Shorthand untuk menulis justify-items dan align-items dalam satu deklarasi
+
+
+
+4. justify-content => start, end, center, stretch, space-around, space-between
+dan space-evenly
+
+Mengatur posisi seluruh grid container pada sumbu horizontal, ini bisa dilakukan
+ketika ukuran total grid lebih kecil dari ukuran containernya dan biasanya
+grid items nya menggunakan ukuran yang fixed (px)
+
+
+
+5. align-content => start, end, center, stretch, space-around, space-between
+dan space-evenly
+Sama seperti justify-content, tapi untuk sumbu vertical
+
+
+6. place-content
+Shorthand untuk menulis align-content dan justify-content dalam satu deklarasi

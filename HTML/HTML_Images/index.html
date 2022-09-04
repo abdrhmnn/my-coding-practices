@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan kesembilan</title>
+</head>
+
+<body>
+
+    <!-- Floating Image -->
+    <img src="img1.jpg" alt="sinb" style="width: 100px; height: 100px; float: left; margin-right: 5px;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sunt in atque at ipsam vitae. Possimus soluta amet
+        incidunt, est aliquid illo, obcaecati tenetur eum voluptatibus ducimus quasi aperiam! Error.</p>
+
+    <!-- Floating Image -->
+    <p>
+        <img src="img2.jpg" alt="umji" style="widows: 100px; height: 100px; float: right;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis impedit voluptates velit reprehenderit, hic vero
+        officia eaque neque fugit labore.
+        <!-- Floating Image -->
+    </p>
+
+
+    <!-- Image Map, untuk menseleksi sebuah foto dari gambar aslinya -->
+    <img src="gfriend.jpg" alt="gfriend" usemap="#test" style="width: 150;" height="150">
+    <map name="test">
+        <area shape="circle" coords="370, 350, 80, 80" href="img1.jpg" alt="sinb">
+    </map>
+    <!-- Image Map, disini juga bisa dikombinasikan dengan atribut Javascript yaitu 
+    onclick="" 
+    Dan juga value dari shape yaitu rect = persegi, circle = lingkarang, poly = segiempat dan default
+    -->
+
+    <!-- Background Image -->
+    <p
+        style="background-image: url(img1.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+        Lorem ipsum dolor
+        sit amet consectetur
+        adipisicing elit. Possimus
+        expedita exercitationem assumenda, ipsam qui dolor!</p>
+    <!-- Background Image -->
+
+
+    <!-- Picture Element -->
+    <picture>
+        <source media="(max-width:600px)" srcset="img1.jpg">
+        <source media="(max-width:1500px)" srcset="img2.jpg">
+        <img src="img2.jpg" alt="umji" style="width: auto;">
+    </picture>
+    <!-- Picture Element -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+## melakukan cloning atau mengcopy repositori server ke local
+
+git clone <urlRemoteRepositori> (+ <namaFolder> jk ingin nama folder yg brbda dgn repositori)
+

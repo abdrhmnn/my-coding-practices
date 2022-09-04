@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        /* Yang penting bisa mengatur ukuran LEBAR dari containernya dan juga dari IMG nya */
+        .container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* height dan width tidak dipakai juga tidak apa" krn sudah diatur di top,left
+            right dan bottom nya */
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            /* Kuncinya di opacity */
+            transition: opacity 1s ease 2s;
+            background: url(bg2.jpg);
+            background-size: cover;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        /* .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 50px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="bg1.jpg" alt="gfriend">
+        <div class="overlay">
+            <div class="text">
+                Hello World
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

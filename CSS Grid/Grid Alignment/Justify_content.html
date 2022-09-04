@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid CSS | Justify Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: black;
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 120px 180px 120px;
+            grid-template-rows: repeat(2, 80px);
+            gap: 5px;
+
+            
+            /* Mengatur posisi seluruh grid container pada sumbu horizontal */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: stretch; */
+
+            /* Terdapat jarak antara element dan jarak pertama dan terahir */
+            /* itu dibagi 2 dengan jarak element nya*/
+            /* justify-content: space-around; */
+
+            /* tidak ada jarak pertama dan terakhir, hanya ada jarak antara */
+            /* elementnya saja */
+            /* justify-content: space-between; */
+
+
+            /* seluruh element memiliki jarak yang sama */
+            /* justify-content: space-evenly; */
+
+        }
+
+        .items {
+            border: 3px solid black;
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items li1">1</div>
+        <div class="items li2">2</div>
+        <div class="items li3">3</div>
+        <div class="items li4">4</div>
+        <div class="items li5">5</div>
+        <div class="items li6">6</div>
+        <div class="items li7">7</div>
+        <div class="items li8">8</div>
+        <div class="items li9">9</div>
+    </div>
+</body>
+
+</html>

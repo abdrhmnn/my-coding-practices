@@ -1,0 +1,18 @@
+{
+  "name": "latihan",
+  "version": "1.0.0",
+  "description": "belajar menggunakan modules npm",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdu",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}

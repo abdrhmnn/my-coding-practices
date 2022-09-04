@@ -1,0 +1,55 @@
+## Melihat status repositori :
+
+git status
+
+## tiga tahapan states dalam git :
+- modified -> file yg sudah diubah, ditambah, diedit namun belum disimpan ke repositori
+- staged -> menandai file yang sudah diubah akan disimpan ke dalam repositori
+- committed -> file sudah aman disimpan ke dalam repositori
+
+## tahapan states diatas bekerja di masing-masing section, diantara nya :
+- modified -> working directory
+- staged -> staging area
+- committed -> repositori
+
+
+## setiap perubahan yang kita lakukan di satu atau beberapa file didalam git
+itu disebut sebagai :
+
+snapshot, bukan disebut versi
+snapshot berisi perubahan yang dilakukan dan menghasilkan hash (identitas snapshot)
+
+## keyword HEAD menunjukkan hash yang paling akhir
+
+## perintah dasar menambah file didalam git :
+- git add . / git add <namaFile> -> memindahkan file dr working directory ke staging area
+- git commit -> memindahkan file dari staging area ke repositori
+
+
+## jika ingin membatalkan beberapa file yang berada didalam working directory :
+
+git clean -f
+
+## untuk mengembalikan file yang sudah dihapus di working directory :
+
+git restore <namaFile>
+
+## membatalkan perubahan di staging area :
+
+git restore --staged <namaFile>
+
+## beberapa perintah git :
+- git log -> untuk melihat history commit
+- git show <hash> -> melihat secara detail sebuah commit dgn memberikan 7 hash pertama
+- git diff <hash1> <hash2> -> compare hasil antara 2 commit
+- git reset <mode> <hash> -> utk mengganti pointer HEAD commit ke commit lain
+- git commit --amend -m <pesan> -> mengreplace pesan commit
+- git checkout <hash> -- <namaFile> -> pindah ke commit tertentu yang berada di suatu file
+- git checkout <namaBranch> / <hash> -> untuk pindah ke commit tertentu
+- git blame <namaFile> -> melihat perubahan pada commit (author, isi commit, dll)
+
+## revert commit :
+yaitu membatalkan commit yg sdh dilakukan dgn cara membuat commit baru yg membatalkan
+commit sebelumnya, jadi maksudnya membalikkan keadaan suatu committed
+
+git revert <hash>

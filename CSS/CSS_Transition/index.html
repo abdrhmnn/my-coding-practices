@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        /* SHORTHAND dari transition yaitu : 
+        pertama transition-property, transition-duration, ts-timing function dan ts-delay. CONTOH : 
+        width 2s ease 1s */
+
+        /* TRANSITION juga bisa digabungkan lebih dari satu PROPERTY, contoh : 
+        widht 2s, heigh 2s, transform 2s */
+
+        .satu {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            transition: width 1s, height 1s;
+            /* values dari Transition-timing-function  :
+                1. ease
+                2. linear
+                3. ease-in
+                4. ease-out
+                5. ease-in-out
+                6. cubic-bezier (n,n,n,n) */
+        }
+
+        .satu:hover {
+            width: 200px;
+            height: 200px;
+        }
+
+        div {
+            width: 100px;
+            border: 1px solid black;
+            height: 100px;
+            transition: width 2s;
+        }
+
+        div:hover {
+            width: 300px;
+        }
+
+        #one {
+            transition-timing-function: ease;
+        }
+
+        #dua {
+            transition-timing-function: linear;
+        }
+
+        #tiga {
+            transition-timing-function: ease-in;
+        }
+
+        #empat {
+            transition-timing-function: ease-out;
+        }
+
+        #lima {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="satu"></div>
+
+    <div id="one">ease</div>
+    <div id="dua">linear</div>
+    <div id="tiga">ease-in</div>
+    <div id="empat">ease-out</div>
+    <div id="lima">ease-in-out</div>
+
+</body>
+
+</html>

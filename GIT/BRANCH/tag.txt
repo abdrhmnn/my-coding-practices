@@ -1,0 +1,25 @@
+## menandai sebuah commit id atau hash commit
+
+## kalo HEAD dia reference ke commit terakhir tpi klo tag dia reference ke commit tertentu
+
+## Tag adalah sesuatu yang unik, artinya jika kita sudah membuat tag dengan nama A
+maka kita tidak bisa membuat tag dengan nama yang sama lagi
+
+git tag <tagName> <hash>
+
+test tag02
+
+## melihat list tag
+
+git tag -l / --list
+
+## kita bisa pindah ke tag yang lain dgn cara
+
+git checkout <tagName>
+
+## kita tdk bs mengubah tag jdi jika ingin ubah tag maka hrs bikin tag baru di commit yg sama
+lalu menghapus tag yg lama
+
+git tag -d / -- delete <tagName>
+
+testing rebase - abdu

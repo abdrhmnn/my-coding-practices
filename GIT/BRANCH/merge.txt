@@ -1,0 +1,19 @@
+## menggabungkan dua buah branch, maksudnya perubahan dari branch tertentu akan ditarik
+dimasukkan ke dalam branch yang dituju
+
+## misal kita ingin menarik perubahan dari branch testing ke dalam master
+maka kita hrs pindah dulu ke branch master, lalu lakukan :
+
+git merge <namaBranch>, git merge --no-commit <namaBranch> -> jika ingin review sblm merge
+
+ketika merge dilakukan maka akan menambahkan commit baru
+
+## membatalkan merge yang terjadi conflict
+
+git merge --abort
+
+## cherry pick, yaitu mengambil commit tertentu dari suatu branch dan kita lakukan merge
+ke dalam branch yang dituju, jadi tidak semua commit kita merge hanya commit yang kita pilih
+saja
+
+git cherry-pick <hash>

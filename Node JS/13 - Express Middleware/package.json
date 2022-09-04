@@ -1,0 +1,11 @@
+{
+  "name": "latihan",
+  "version": "1.0.0",
+  "description": "belajar middleware express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdu",
+  "license": "ISC"
+}

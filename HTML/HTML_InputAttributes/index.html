@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke duasatu</title>
+</head>
+
+<body>
+
+    <!-- readonly attribute, hanya bisa membaca input saja -->
+    <form method="post" action="#">
+        <label for="username">Readonly</label>
+        <input type="text" name="username" id="username" readonly value="Abdu">
+    </form>
+    <!-- readonly attribute -->
+
+    <!-- Disabled attribute,  -->
+    <form method="post" action="#">
+        <label for="Username">Disabled</label>
+        <input type="text" name="Username" id="Username" value="John" disabled>
+    </form>
+    <!-- Disabled attribute -->
+
+    <!-- Size attribute, untuk mengatur LEBAR dari input -->
+    <form method="get" action="#">
+        <label for="username">Size</label>
+        <input type="text" name="username" id="username" value="Abdu" size="40">
+    </form>
+    <!-- Size attribute -->
+
+    <!-- Maxlength attribut, untuk memberikan jumlah panjang dari kata  -->
+    <form method="post" action="#">
+        <label for="username">Maxlength</label>
+        <input type="text" name="username" id="username" maxlength="10">
+    </form>
+    <!-- Maxlength attribut -->
+
+    <!-- HTML5 Form atrribute input -->
+    <!-- 1. autocomplete        11. min and max
+         2. autofocus           12. multiple
+         3. form                13. pattern (regexp)
+         4. formaction          14. placeholder
+         5. formentype          15. required
+         6. formmethod          16. step
+         7. formnovalidate
+         8. formtarget             Dua atribut ini juga berada di <form> :
+         9. height and width        1. autocomplete
+         10. list                   2. novalidate  -->
+    <!-- HTML5 Form atrribute input -->
+
+
+    <!-- Autocomplete Attribute -->
+    <form method="get" action="#" autocomplete="on">
+        <label for="username">noautocomplete :</label>
+        <input type="text" name="username" id="username">
+
+        <label for="password">Autocomplete :</label>
+        <input type="password" name="password" id="password" autocomplete="off">
+    </form>
+    <!-- Autocomplete Attribute -->
+
+    <img src="" alt="">
+    <!-- Novalidate attribute, tidak bisa mengirimkan data ketika submit ditekan -->
+    <form method="post" action="#" novalidate>
+        <label for="username">Novalidate :</label>
+        <input type="text" name="username" id="username">
+    </form>
+    <!-- Novalidate attribute -->
+
+    <!-- Autofocus attribute, fungsi ketika user membuka web maka cursornya akan otomatis berada
+    di input -->
+    <form method="post" action="#">
+        <label for="username">Autofocus :</label>
+        <input type="text" name="username" id="username" autofocus>
+    </form>
+    <!-- Autofocus attribute -->
+
+    <!-- Formaction attribute, untuk memberikan Spesifik URL ketika tombol submit berjumalh
+    lebih dari satu tetapi hanya bisa dilakukan dengan type "submit" dan "image" -->
+    <form method="post" action="#">
+        <label for="username">Formaction :</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" name="submit" value="submit">
+        <br>
+        <input type="submit" name="submit" value="Submit as admin" formaction="#">
+    </form>
+    <!-- Formaction attribute -->
+
+    <!-- Formentype attribute, digunakan untuk bagaimana data dikirim dgn lebih spesifik tetapi 
+    hanya bisa dilakukan dengan type "submit" dan "image" -->
+    <form method="post" action="#" enctype="multipart/form-data">
+        <label for="username">Formentype :</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" name="submit" value="submit">
+        <br>
+        <input type="submit" name="submit" value="Submit as admin" formenctype="multipart/form-data">
+    </form>
+    <!-- Formentype attribute -->
+
+    <!-- Formmethod attribute, untuk mengubah method yang ada didalam form tetapi 
+    hanya bisa dilakukan dengan type "submit" dan "image" -->
+    <form method="get" action="#">
+        <label for="username">Formmethod :</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" name="submit" value="submit">
+        <br>
+        <input type="submit" name="submit" value="Submit as admin" formmethod="POST">
+    </form>
+    <!-- Formmethod attribute -->
+
+    <!-- Formnovalidate attribute, fungsi untuk tidak bisa mengirim data tetapi 
+    hanya bisa dilakukan dengan type "submit" -->
+    <form method="get" action="#">
+        <label for="username">Formnovalidate :</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" name="submit" formnovalidate value="submit without validate">
+    </form>
+    <!-- Formnovalidate attribute -->
+
+    <!-- Formtarget attribute, untuk memberikan fungsi target didalam input tetapi 
+    hanya bisa dilakukan dengan type "submit" dan "image" -->
+    <form method="get" action="#">
+        <label for="username">Formtarget :</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" name="submit" formtarget="_blank" value="submit to a new window">
+    </form>
+    <!-- Formtarget attribute -->
+
+    <!-- The height and width, untuk mengatur panjang dan lebar dari gambar tetapi 
+    hanya bisa dilakukan dengan type "image" -->
+    <form method="get" action="#">
+        <label for="username">Height and Width :</label>
+        <input type="text" name="username" id="username">
+        <input type="submit" name="submit">
+        <input type="image" src="#" alt="submit" height="100" width="100">
+    </form>
+    <!-- The height and width -->
+
+    <!-- The min and max attributes, untuk memberikan minimal dan maksimal panjang 
+    dari input, hanya bisa digunakan pada type number,range,date,datetime-local,month,time and
+    week -->
+    <form method="get" action="#">
+        <label for="number">The value number is between 1 to 5 :</label>
+        <input type="number" name="number" id="number" min="1" max="5">
+    </form>
+    <!-- The min and max attributes -->
+
+    <!-- Multiple attribute, digunakan untuk memberikan akses kepada user utk bisa menggunakan
+    input lebih dari satu tetapi hanya bisa digunakan pada type "file" dan "image" -->
+    <form method="post" action="#">
+        <label for="file">Multiple :</label>
+        <input type="file" name="file" id="file" multiple>
+    </form>
+    <!-- Multiple attribute -->
+
+    <!-- Pattern attribute, untuk memberikan spesifik input user tetapi hanya bisa digunakan pada
+    type "text", "search", "url", "tel", "email" dan "password"  -->
+    <form method="get" action="#">
+        <label for="text">Pattern :</label>
+        <input type="text" name="text" id="text" pattern="[A-Za-z]{3}" title="Three Letter
+        Country code">
+        <input type="submit">
+    </form>
+    <!-- Pattern attribute -->
+
+    <!-- Step attribute, untuk memberikan legal number yang diinputkan oleh user (kelipatan)
+    maka legal number dibawah ini yaitu -3, 0, 3, 6 -->
+    <form method="post" action="#">
+        <label for="number">Legal number :</label>
+        <input type="number" name="number" id="number" step="3">
+    </form>
+    <!-- Step attribute tetapi hanya bisa digunakan pada type "number", "range", "datetime-local"
+    "date", "month", "time" dan "week" -->
+
+
+</body>
+
+</html>

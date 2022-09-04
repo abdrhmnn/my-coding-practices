@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            padding: 60px;
+            text-align: center;
+            background-color: green;
+            color: white;
+        }
+
+        .nav {
+            display: flex;
+            background-color: black;
+        }
+
+        .nav a {
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: reverse;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: red;
+            padding: 20px;
+        }
+
+        .main h2 {
+            text-transform: uppercase;
+        }
+
+        .side .fakeimg {
+            background-color: #acacac;
+            padding: 20px;
+        }
+
+        .main .fakeimg {
+            background-color: #acacac;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #acacac;
+            padding: 10px;
+        }
+
+        .footer p {
+            text-align: center;
+            color: black;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-color: yellow; padding: 5px;">
+        <h4 style="text-align: center;">Resize the browser window to see the responsive effect</h4>
+    </div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a flexible layout</p>
+    </div>
+
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h4>Photo of me :</h4>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime sunt, fuga modi maiores quod natus.</p>
+            <h2>More Text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, consequuntur.</p>
+            <div class="fakeimg" style="height: 60px;">Image</div>
+            <div class="fakeimg" style="height: 60px; margin-top: 10px;">Image</div>
+            <div class="fakeimg" style="height: 60px; margin-top: 10px;">Image</div>
+        </div>
+
+        <div class="main">
+            <h2>Title headling</h2>
+            <h4>Title description, Dec 7, 2017</h4>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some Text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ex, nulla vero, non, nostrum quae adipisci
+                aliquam illo atque deleniti ullam optio fugit dolorum ipsa laudantium architecto? Corrupti, est velit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam molestiae, culpa amet voluptatibus
+                nulla sapiente quo, modi nisi asperiores reprehenderit cum adipisci recusandae provident iure rerum
+                dignissimos? Consectetur, non ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non
+                mollitia, sed aliquid, aperiam expedita vel tempora eveniet ullam dolor harum labore! Dolorum sed,
+                pariatur quo architecto saepe laboriosam odio.
+            </p>
+            <br>
+            <h2>Title headling</h2>
+            <h4>Title description, Dec 7, 2017</h4>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some Text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ex, nulla vero, non, nostrum quae adipisci
+                aliquam illo atque deleniti ullam optio fugit dolorum ipsa laudantium architecto? Corrupti, est velit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam molestiae, culpa amet voluptatibus
+                nulla sapiente quo, modi nisi asperiores reprehenderit cum adipisci recusandae provident iure rerum
+                dignissimos? Consectetur, non ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex non
+                mollitia, sed aliquid, aperiam expedita vel tempora eveniet ullam dolor harum labore! Dolorum sed,
+                pariatur quo architecto saepe laboriosam odio.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

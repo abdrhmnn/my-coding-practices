@@ -1,0 +1,342 @@
+body {
+    background-color: #666;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    height: 300px;
+    margin: auto;
+    background-color: rgb(196, 195, 195);
+    background: url("bg1.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.header::after {
+    /* Ini untuk membuat gradasi warna pada headernya */
+    content: "";
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.header .hero,
+p {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    padding-top: 50px;
+}
+
+.header p {
+    padding-top: 30px;
+}
+
+
+/* Navbar */
+.nav ul {
+    /* background-color: rgb(63, 63, 63); */
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -45px;
+}
+
+.nav li {
+    float: left;
+}
+
+/* #right {
+    margin-left: 1030px;
+} */
+
+.nav ul li a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.nav a:hover {
+    border-bottom: 1px solid blue;
+    margin-top: -1px;
+}
+
+.dropdown {
+    display: inline-block;
+    border-bottom: none;
+}
+
+.dropdown li a:hover {
+    border-bottom: none;
+    margin-top: -1px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+    background-color: #acacac;
+    min-width: 100px;
+
+}
+
+.dropdown-content a {
+    display: block;
+    border-bottom: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-bottom: none;
+    margin-left: 30px;
+}
+
+
+/* Conten */
+.container {
+    width: 70%;
+    background-color: white;
+    float: left;
+}
+
+.container h3 {
+    padding: 5px 0 15px 15px;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.container h3 a {
+    text-decoration: none;
+    color: red;
+}
+
+.container .ct {
+    font-size: 30px;
+    margin-right: 19px;
+    padding: 5px 0 10px 12px;
+    color: black;
+    font-weight: 200;
+    text-indent: 0;
+}
+
+.container p span {
+    font-weight: 600;
+}
+
+.container .big {
+    font-size: 60px;
+    float: left;
+    text-indent: 15px;
+    margin: 15px 10px 9px 0;
+    font-weight: 200;
+}
+
+.container h3 a:hover {
+    border-bottom: 1px solid black;
+}
+
+.container .image {
+    width: 96%;
+    height: 520px;
+    background: url(bg2.jpg);
+    background-size: cover;
+    background-position: 0 -40px;
+    background-repeat: no-repeat;
+    margin: 5px 0 10px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.container .image::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    border-radius: 10px;
+}
+
+.container h1 {
+    padding-top: 30px;
+    width: 400px;
+    padding-left: 15px;
+    font-weight: 200;
+}
+
+.container h1 span {
+    font-weight: 600;
+}
+
+.container p {
+    padding: 5px 0 10px 12px;
+    color: black;
+    text-align: justify;
+    margin-right: 19px;
+    line-height: 25px;
+    /* text-indent: 30px; */
+}
+
+.side {
+    background-color: white;
+    width: 340px;
+    float: right;
+    height: 390px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.side h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.side .imgside {
+    padding: 15px 0 0 15px;
+    background: url(profile.jpg);
+    background-size: cover;
+    margin: 10px 12px 0 10px;
+    width: 180px;
+    height: 170px;
+    border-radius: 20px;
+    float: left;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.side p {
+    text-align: left;
+    padding: 10px 10px 0 10px;
+    color: black;
+    text-align: justify;
+}
+
+.popular {
+    float: right;
+    background-color: white;
+    width: 340px;
+    height: 510px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.popular h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.popular .imgpop {
+    padding: 15px 0 0 15px;
+    background: url(pop1.jpg);
+    background-size: cover;
+    background-position: 0 -80px;
+    margin: 15px 0 10px 10px;
+    width: 93%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.popular .imgpop2 {
+    padding: 15px 0 0 15px;
+    background: url(pop2.jpg);
+    background-size: cover;
+    background-position: 0 -30px;
+    margin: 15px 0 10px 10px;
+    width: 93%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.popular p {
+    color: black;
+    text-align: left;
+    padding: 25px 0 0 10px;
+}
+
+.popular p a {
+    text-decoration: none;
+    color: red;
+}
+
+.popular p a:hover {
+    border-bottom: 1px solid black;
+}
+
+.follow {
+    float: right;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px 160px 15px 0;
+    height: 200px;
+}
+
+.fl1 {
+    margin-top: 10px;
+}
+
+.fl1 img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 5px 0 5px 10px;
+    border-radius: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl1 a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+.follow h2 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.follow p {
+    text-align: left;
+    padding: 10px 0 0 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(170, 170, 170);
+}
+
+.footer p {
+    padding: 10px;
+    color: black;
+}

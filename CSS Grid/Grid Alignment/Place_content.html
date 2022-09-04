@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid CSS | Place Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: black;
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 120px 180px 120px;
+            grid-template-rows: repeat(2, 80px);
+            gap: 5px;
+
+            /* Shorthand justify dan align content */
+            place-content: space-between center;
+        }
+
+        .items {
+            border: 3px solid black;
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items li1">1</div>
+        <div class="items li2">2</div>
+        <div class="items li3">3</div>
+        <div class="items li4">4</div>
+        <div class="items li5">5</div>
+        <div class="items li6">6</div>
+        <div class="items li7">7</div>
+        <div class="items li8">8</div>
+        <div class="items li9">9</div>
+    </div>
+</body>
+
+</html>

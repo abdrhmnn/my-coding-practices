@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke delapan belas</title>
+    <style>
+        p:lang(no) {
+            quotes: "~""~";
+        }
+
+        input:focus {
+            background-color: magenta;
+        }
+
+        input[type="checkbox"]:checked {
+            /* Pseudo-class khusus untuk tipe input checkbox dan radio */
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        input.b:in-range {
+            /* Pseudo-class khusus untuk input tipe range */
+            border: 1px solid green;
+        }
+
+        ::selection {
+            /* Untuk mengedit elemen yang di select oleh user */
+            background-color: greenyellow;
+            color: palegoldenrod;
+        }
+
+        /* NOTE* pseudo-class nth-child memiliki nilai kelipatan */
+    </style>
+</head>
+
+<body>
+
+    <!-- PseudoClass Element -->
+    <!-- 1. :first-child, untuk menseleksi element pertama dari sebuah parent
+         2. :lang, untuk mendefinisikan suatu element secara lebih spesifik, contoh : 
+         3. :focus, untuk memberikan efek ketika mouse atau keyboard berada di value nya 
+         4. ::after, untuk menseleksi elemen yang setelahnya 
+         5. ::before, untuk menseleksei elemen yang sebelumnya -->
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. voluptates <q lang="no">odio aperiam</q> quibusdam
+        incidunt quam quae, error, omnis aspernatur? Provident quo commodi dolor dolores nihil!</p>
+    <form method="post" action="#">
+        <label for="username">Username :</label>
+        <input type="text" name="username" id="username" readonly value="Abdu">
+
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password">
+
+        <label for="radio">Radio :</label>
+        <input type="radio" name="radio" id="radio" class="a">LAKI-LAKI
+        <input type="radio" name="radio" id="radio" class="a">perempuan
+
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number" min="5" max="10" value="7" class="b">
+
+        <label for="check">Checkbox</label>
+        <input type="checkbox" name="check" id="check">
+    </form>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatibus officia ipsum mollitia tenetur quos
+        molestiae saepe omnis sit delectus quaerat. Beatae minima vitae laudantium ut exercitationem odio pariatur
+        consequuntur!</p>
+
+</body>
+
+</html>

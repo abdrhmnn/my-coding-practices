@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: 'Varta', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    /* row-gap utk berikan jarak antara grid header dan menu */
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-areas:
+        "hero hero feature-1"
+        "hero hero feature-2";
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero h2,
+.hero p {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(img/img2.jpg);
+    background-size: cover;
+}
+
+.features .price {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+
+
+/* Navigasi */
+.menu {
+    order: -1;
+    /* untuk menukar item yang memiliki display grid atau flex */
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.menu .brand {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.menu ul {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.service .icon {
+    font-size: 3em;
+}
+
+.service h3 {
+    font-size: 1.5em;
+}
+
+.service p {
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.gallery h2 {
+    /* Ini akan membuat tulisannya menjadi 1 kolom */
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Responsive Breakpoints */
+/* Whitescreen */
+@media screen and (max-width: 1024px) {
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    .menu .brand {
+        display: none;
+    }
+
+    .hero h2,
+    .hero p {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    /* ini membuat semua element dalam class header menjadi satu kolom */
+    .header {
+        grid-template-areas: "hero"
+            "feature-1"
+            "feature-2";
+    }
+
+    body {
+        margin: 15px;
+    }
+}
+
+/* @media screen and (max-width: 600px) {} */

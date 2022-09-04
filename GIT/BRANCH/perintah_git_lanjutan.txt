@@ -1,0 +1,16 @@
+## saat membuat branch baru, secara otomatis branch baru akan dibuat
+dari posisi branch saat ini
+
+git branch <namaBranch>
+
+## pindah ke branch lain
+
+git switch / checkout <namaBranch>
+
+## mengubah nama branch, pindah terlebih dahulu ke branch yang ingin kita ubah
+
+git branch -m <namaBranchBaru>
+
+## menghapus branch
+
+git branch -d / --delete <namaBranch>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan ke tiga</title>
+    <style>
+        p {
+            border: 2px solid black;
+        }
+
+        .satu {
+            border: 2px solid black;
+
+
+            margin: 10px 10px 10px 10px;
+            /* Shorthand margin (atas, kanan, bawah kiri) */
+
+
+            margin: 10px 10px 10px;
+            /* Shorthand margin (atas, kanan dan kiri, bawah) */
+
+
+            margin: 10px 10px;
+            /* Shorthand margin (atas dan bawah, kanan dan kiri) */
+
+
+            margin: auto;
+            /* untuk membuat elemen container menjadi ke tengah */
+            /* Jika antara margin saling bertemu maka mereka akan diakumulasikan jumlahnya */
+            /* Margin memiliki nilai NEGATIF */
+        }
+
+        .coba {
+            border: 5px solid aquamarine;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .dua,
+        .tiga {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            font-size: 60px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            animation: rotate2 3s infinite;
+        }
+
+        .tiga {
+            margin-top: 10px;
+            animation: rotate 3s infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, deserunt!</p>
+    <p class="satu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nesciunt.</p>
+
+    <div class="coba">
+        <div class="dua">A</div>
+        <div class="dua">M</div>
+        <div class="dua">E</div>
+        <div class="dua">L</div>
+        <div class="dua">I</div>
+        <div class="dua">A</div>
+        <div class="tiga">A</div>
+        <div class="tiga">N</div>
+        <div class="tiga">D</div>
+        <div class="tiga">A</div>
+        <div class="tiga">N</div>
+        <div class="tiga">I</div>
+    </div>
+
+</body>
+
+</html>

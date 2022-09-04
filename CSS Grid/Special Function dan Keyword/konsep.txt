@@ -1,0 +1,17 @@
+Berikut beberapa function dan keyword nya :
+
+1. repeat()
+Menentukan ukuran grid track secara berulang
+
+
+2. min-content & max-content
+Menentukan seberapa besar ukuran grid track (ukuran) berdasarkan content
+pada sebuah item
+
+
+3. auto-fill & auto-fit
+Menentukan jumlah item untuk berada pada grid track (ukuran)
+
+
+4. minmax()
+Menentukan ukuran minimal dan maksimal dari grid track (ukuran)

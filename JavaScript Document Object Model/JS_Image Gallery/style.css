@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body {
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid white;
+    overflow: auto;
+    /** Ini untuk menghilangkan FLOAT nya dgn menggunakan overflow   */
+}
+
+.thumb {
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fade 0.5s forwards;
+}
+
+.active {
+    opacity: .5;
+}
