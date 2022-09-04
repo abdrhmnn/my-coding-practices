@@ -1,0 +1,10 @@
+HTTP status merupakan kode HTTP respon yg mengindikasikan sebuah request yang diterima atau yang dikirimkan oleh client
+
+jenis HTTP status :
+100 - 199 merupakan informational response
+200 - 299 merupakan succesful response
+300 - 399 merupakan redirect response
+400 - 499 merupakan client error
+500 - 599 merupakan server error
+
+bisa detailnya di internet dgn keyword : list of HTTP status codes

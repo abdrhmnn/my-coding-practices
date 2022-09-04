@@ -1,0 +1,3 @@
+HTTP Caching adalah meyimpan data client sampai batas waktu yg ditentukan, ini bermanfaat jika client melakukan request ke resource yg sama maka cukup ambil resource nya di client tanpa harus meminta ulang ke server (cocok digunakan utk file static atau file yg jarang berubah seperti gambar, audio, video, dll).
+
+HTTP Caching ini digunakan didalam header dgn nama Cache-Control atau bisa dicari di internet info lengkap tentang Cache-Control tersebut.

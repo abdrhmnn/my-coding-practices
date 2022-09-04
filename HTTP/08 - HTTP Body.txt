@@ -1,0 +1,6 @@
+HTTP body merupakan data yang dikirim di HTTP Request atau data yg diterima dari HTTP response
+artinya client bisa mengirim data ke server menggunakan HTTP body begitu juga sebaliknya
+
+HTTP Body erat kaitannya dengan Content-type untuk membuat client dan server mengerti isi serta tipe data dari HTTP body
+
+untuk melihat contoh" content-types bisa lihat di internet dgn keyword : common mime types

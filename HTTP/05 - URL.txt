@@ -1,0 +1,10 @@
+URL merupakan alamat dari sebuah resource di web (wajib digunakan untuk menuju informasi resouce nya)
+
+Breakdown URL : https://www.google:443.com/path/to/myfile.html?key1=value#SomeWhereInTheDocument
+
+- https, adalah schema utk mengindikasikan protocol yang perlu digunakan oleh client
+- www.google.com, adalah domain
+- :443, adalah port (default port utk https 443 dan http 80)
+- /path/to/myfile.html, adalah path (berisikan informasi yg menuju resource yg kita tuju)
+- ?key1=value, adalah parameter (informasi tambahan yg beriki key dan value)
+- #SomeWhereInTheDocument, adalah anchor (representasi bookmark dalam sebuah halaman website)

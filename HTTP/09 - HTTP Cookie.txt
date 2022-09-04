@@ -1,0 +1,6 @@
+HTTP Cookie merupakan informasi yg diberikan oleh server, dan client secara otomatis akan meyimpan data tersebut, contohnya di Web Browser
+
+data cookie akan disimpan didalam browser, utk analogi nya :
+client melakukan login stlh login berhasil, server akan mengembalikan respon + data cookie dan data cookie tersebut akan disimpan di web browser, jika client melakukan request selanjutnya maka client akan mengirim request + data cookie yg tersimpan di browser ke server.
+
+cookie ditempatkan pada Header dgn nama Set-Cookie

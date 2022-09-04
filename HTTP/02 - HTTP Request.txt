@@ -1,0 +1,2 @@
+HTTP request berisikan informasi seperti lokal resource, data yg dikirim jika ada, dll
+HTTP request akan diterima oleh server dan server akan memproses request dari client

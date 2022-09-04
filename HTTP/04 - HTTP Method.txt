@@ -1,0 +1,11 @@
+HTTP Method seperti kategori request
+gunakan HTTP Method yg sesuai dgn jenis request yg kita buat
+Jenis HTTP Method :
+- GET, utk melakukan request data (hanya utk menerima data bkn utk mengirim data)
+- HEAD, sama seperti dgn GET tpi tanpa membutuhkan respon body
+- POST, utk mengirim data baru (menambah) ke server biasanya terdapat request body
+- PUT, utk mengganti (replace) semua data yg terdapat diserver dgn data baru yg dikirim di request
+- DELETE, utk menghapus data
+- PATCH, utk mengubah sebagian data (kalo PATCH hanya sebagian data saja tidak semuanya)
+- OPTIONS, utk mendeskripsikan opsi komunikasi yang tersedia (seperti bertanya ke server ada operasi apa saja di sebuah website)
+- TRACE, utk debugging (response dari HTTP Method TRACE akan mengembalikan seluruh informasi yang dikirim oleh client)

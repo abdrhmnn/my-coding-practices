@@ -1,0 +1,10 @@
+HTTP Header merupakan informasi tambahan yg biasanya dikirim di request atau respon
+
+contoh HTTP Header yg umum digunakan :
+- Host : nama URL (domain)
+- Content-type : tipe data dari HTTP body (misal jika ingin mengirim data gambar ke server maka perlu masukan value kedalam content-type nya adalah gambar/image) supaya sih server bisa tau data apa yg kita kirimkan
+- User-agent : Informasi mengenai user-agent (seperti ver browser dan sistem operasinya)
+- Accept : tipe data yg diterima oleh client
+- Authorizaiton : credential untuk autentikasi
+
+bisa liat di internet informasi lengkap dari HTTP Header dgn keyword : list of http header fields

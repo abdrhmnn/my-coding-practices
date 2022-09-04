@@ -1,0 +1,13 @@
+HTTP adalah Hypertext Transfer Protocol
+
+HTTP adalah protokol untuk transmisi (pengiriman dari satu tempat ke tempat lain) hypermedia document antara web browser dan web server atau bisa jg utk kebutuhan lain.
+
+Client mengirim HTTP request untuk meminta data atau mengirim informasi ke server
+Server membalasnya dengan HTTP response dari HTTP request yang diterima
+
+HTTP Request dan respon biasanya disebut sebagai HTTP Message
+
+HTTP merupakan protokol stateless, setiap request HTTP itu bersifat independen artinya tidak ada hubungannya antara satu request dgn yg lain
+
+lebih baik menggunakan HTTPS , S nya Secure
+HTTPS jauh lebih aman karena bisa mengenkripsi request dan respon dgn teknologi SSL
