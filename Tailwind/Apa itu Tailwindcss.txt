@@ -1,0 +1,8 @@
+tailwindcss merupakan framework css yang memiliki konsep utility-first maksudnya setiap class memiliki tugas tertentu
+
+ada 2 cara menghapus utility yang sudah tidak terpakai di file output css :
+- restart compiler tailwind
+- ctrl + s di file output nya
+
+cara mengreduce ukuran file output css tailwind, jika proses development sudah selesai :
+- npx tailwindcss -o ./src/final_output.css --minify
